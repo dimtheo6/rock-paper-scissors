@@ -50,9 +50,8 @@ function scoreSystem() {
                             }
     console.log(`computer score is : `, computerScore);
     console.log(`player score is : `, playerScore);
-    return [computerScore, playerScore];
-
 }
+
 function winner(){
     if (computerScore > playerScore){
         console.log(`GRIIIITAAAAWWW THE COMPUTER WON WITH A SCORE OF ${computerScore}`);
