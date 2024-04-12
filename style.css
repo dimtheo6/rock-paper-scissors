@@ -1,8 +1,109 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: aqua;
+}
 button{
+    width: 100px;
+    height: 100px;
+    color: black;
+}
+img{
     width: 50px;
     height: 50px;
+    
+}
+.playerChoices{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    gap: 20px;
 }
 
-/* #rock{
-    background-image: ;
-} */
+
+#playerSelection{
+    margin-left: 30px;
+}
+#computerSelection{
+    display: flex;
+    margin-left: 45px
+}
+
+.header{
+    background-color: lightslategray;
+    margin: 0px;
+    height: 100px;
+    line-height: 100px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.scoreContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+#rock{
+    background-color: blue;
+    background: url('images/rock2.png') no-repeat;
+    background-size: 90px;
+    cursor:pointer;
+    
+}
+
+#paper{
+    background-color: blue;
+    background: url('images/paper2.jpeg') no-repeat;
+    background-size: 100px;
+    cursor:pointer;
+    
+}
+
+#scissors{
+    background-color: blue;
+    background: url('images/scissors2.png') no-repeat;
+    background-size: 100px;
+    cursor:pointer;
+    
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .popup-content h2 {
+    margin-top: 0;
+  }
+  
+  .popup-content button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div id="playerScore">label</div>
-        <div id="computerScore">label</div>
-        <button id="rock"></button>
-        <button id="paper"></button>
-        <button id="scissors"></button>
+    <h1 class="header">Rock-Paper-Scissors</h1>
+    <div class="main">
+        <div class="scoreContainer">
+            <div class="scoreBox">
+                <div id="scoreInfo"></div>
+                <div id="playerSelection"></div>
+            </div>
+
+            <div class="scoreBox">
+                <div id="scoreInfo2"></div>
+                <div id="computerSelection"></div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="popup-content">
+              <h2></h2>
+              <button id="close">Close</button>
+            </div>
+          </div>
+
+        <div id="display"></div>
+        <div class="playerChoices">
+            <button id="rock" tabindex="0"></button>
+            <button id="paper"></button>
+            <button id="scissors"></button>
+        </div>
+    </div>
     </div>
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>
